@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+/* inicio de interface, menu e banner*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+header .line{
+    background-color: #117050;
+    height: 15px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header-left img{
+    height: 64px;
+    width: 64px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-menubar{
+    margin-left: 50px;
+    cursor: pointer;
+}
+.header-menubar img{
+    width: 40px;
+    height: 35px;
+}
+.header-search input{
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 1px solid #999;
+    outline: 0;
+    width: 100%;
+    max-width: 250px;
+}
+.header-search form{
+    display: flex;
+}
+.header-search button{
+    background-color: transparent;
+    border: 0;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.header-search button img{
+    width: 20px;
+    height: 20px;
+}
+.banner {
+    background-image: url('../assets/images/background1.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+h1 {
+    font-family: 'Oswald', 'sans serif';
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h2{
+    font-family: 'Oswald', 'sans serif';
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 30px;
+    margin: 25px 0px;
+}
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #454545;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #454545;
+}
+.button:hover{
+    color: #fff;
+    background-color: #454545;
+}
+.banner-images img{
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.banner-images{
+    margin-top: 60px;
+}
+/* fim da interface, menu e banner*/
+
+
+/* inicio da Parte da area 1*/
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bar{
+    background-color: #117050;
+    width: 168px;
+    height: 22px;
+}
+.area1-content{
+    padding: 80px;
+}
+.area-quote{
+    margin-bottom: 30px;
+}
+.area-text{
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.area1 .area1-img1{
+    background-image: url(../assets/images/background3.jpeg);
+    background-position:center;
+    background-size: cover;
+    height: 350px;
+}
+.area1 .area1-img2{
+    background-image: url(../assets/images/background2.jpeg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+/* fim da parte area1 */
+
+
+
+/* inicio da Parte da area 2*/
+.area2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bar{
+    background-color: #117050;
+    width: 168px;
+    height: 22px;
+}
+.area2-content{
+    padding: 80px;
+}
+
+.area-text{
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.area2 .area2-img1{
+    background-image: url(../assets/images/background5.jpeg);
+    background-position:center;
+    background-size: cover;
+    height: 450px;
+}
+.area2 .area2-img2{
+    background-image: url(../assets/images/background4.jpeg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+/* fim da parte area1 */
+
+
+/* Inicio da area3*/
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3 .area3-img1{
+    background-image: url(../assets/images/background6.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.area3 .area3-content{
+    padding: 200px 80px;
+    background-image: url(../assets/images/background9.jpeg);
+    background-position: left;
+    background-size: cover;
+}
+.area3 .area-text{
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+/* Fim da area 3*/
+
+
+
+/*inicio area 4*/
+.area4{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+}
+
+.area4 .area4-img1{
+    background-image: url(../assets/images/background7.jpeg);
+    background-position: left;
+}
+.area4 .area4-content{
+    padding: 200px 80px;
+    background-position: left;
+    background-size: cover;
+    background-color: #e8e9ee;
+}
+.area-text{
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+/* fim da area 4*/
+
+
+/*inicio area5*/
+.area5{
+    background-image: url(../assets/images/background8.jpeg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    background-color: #333;
+    padding: 80px;
+    text-align: center;
+    color: #fff;
+}
+/* fim area 5*/
+
+/*responsividade dos codigos*/
+@media (min-width:769px) and (max-width:1140px){
+    .container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+@media (max-width:768px) and (min-width:426px){
+      .container{
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+      .area1{
+          grid-template-columns: 3fr 2fr;
+      }
+      .area2{
+         grid-template-columns: 2fr 3fr;
+      }
+      .area3{
+          grid-template-columns: 3fr 2fr;
+      }
+}
+@media(max-width:425px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner .header-search{
+        max-width: 80px;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner-images img{
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .area1,
+    .area2,
+    .area3,
+    .area4{
+        grid-template-columns: 1fr;
+    }
+    .area1-content,
+    .area2-content,
+    .area3-content,
+    .area4-content{
+        padding: 40px;
+    }
+    .area5{
+        height: 200px;
+    }
+    footer{
+        font-size:12px;
+        padding:20px;
+    }
+}
